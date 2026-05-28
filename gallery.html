@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lumina Gallery</title>
+
+  <link rel="stylesheet" href="style.css"/>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="gallery-body">
+
+  <header class="gallery-header">
+
+    <div>
+      <h1>Lumina Gallery</h1>
+      <p>Modern Responsive Image Gallery</p>
+    </div>
+
+    <button class="logout-btn" onclick="logout()">
+      Logout
+    </button>
+
+  </header>
+
+  <!-- FILTER BUTTONS -->
+
+  <div class="filters">
+
+    <button class="filter-btn active" data-filter="all">All</button>
+
+    <button class="filter-btn" data-filter="nature">Nature</button>
+
+    <button class="filter-btn" data-filter="architecture">Architecture</button>
+
+    <button class="filter-btn" data-filter="portraits">Portraits</button>
+
+  </div>
+
+  <!-- GALLERY -->
+
+  <section class="gallery" id="gallery">
+
+    <div class="gallery-item nature">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Nature"/>
+      <div class="overlay">
+        <h3>Nature</h3>
+      </div>
+    </div>
+
+    <div class="gallery-item architecture">
+      <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2" alt="Architecture"/>
+      <div class="overlay">
+        <h3>Architecture</h3>
+      </div>
+    </div>
+
+    <div class="gallery-item portraits">
+      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" alt="Portrait"/>
+      <div class="overlay">
+        <h3>Portrait</h3>
+      </div>
+    </div>
+
+    <div class="gallery-item nature">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Nature"/>
+      <div class="overlay">
+        <h3>Nature</h3>
+      </div>
+    </div>
+
+    <div class="gallery-item architecture">
+      <img src="https://images.unsplash.com/photo-1494526585095-c41746248156" alt="Architecture"/>
+      <div class="overlay">
+        <h3>Architecture</h3>
+      </div>
+    </div>
+
+    <div class="gallery-item portraits">
+      <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df" alt="Portrait"/>
+      <div class="overlay">
+        <h3>Portrait</h3>
+      </div>
+    </div>
+
+    <div class="gallery-item nature">
+      <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e" alt="Nature"/>
+      <div class="overlay">
+        <h3>Nature</h3>
+      </div>
+    </div>
+
+    <div class="gallery-item architecture">
+      <img src="https://images.unsplash.com/photo-1431578500526-4d9613015464" alt="Architecture"/>
+      <div class="overlay">
+        <h3>Architecture</h3>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- LIGHTBOX -->
+
+  <div class="lightbox" id="lightbox">
+
+    <span class="close">&times;</span>
+
+    <button class="nav prev">&#10094;</button>
+
+    <img class="lightbox-img" id="lightboxImg"/>
+
+    <button class="nav next">&#10095;</button>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
